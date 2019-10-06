@@ -1,6 +1,8 @@
 package oneWayMatrix;
 
 import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
 import java.net.Socket;
 
 public class ClientStart {
@@ -19,8 +21,11 @@ public class ClientStart {
 
          while (isRunning) {
             Matrix m = new Matrix(5, 5);
+
+            OutputStream os = clientSocket.getOutputStream();  
+            ObjectOutputStream oos = new ObjectOutputStream(os);  
+            oos.writeObject(m); 
             
-            m.escreveMatriz(m.getMatrix());
             isRunning = false;
         }
          clientSocket.close();

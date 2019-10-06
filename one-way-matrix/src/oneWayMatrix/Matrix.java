@@ -1,8 +1,16 @@
 package oneWayMatrix;
 
-public class Matrix {
+import java.io.Serializable;
 
+public class Matrix implements Serializable {
+
+	private static final long serialVersionUID = -4414114422396163664L;
+	
 	private int[][] matrix;
+
+	public Matrix(int m[][]) {
+		matrix = m;
+	}
 	
 	public Matrix(int height, int width) {
 		super();
