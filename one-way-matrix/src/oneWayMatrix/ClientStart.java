@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.net.Socket;
+import java.util.Random;
 
 public class ClientStart {
    private static final String module    = "Client";
@@ -20,7 +21,12 @@ public class ClientStart {
          System.out.println();
 
          while (isRunning) {
-            Matrix m = new Matrix(5, 5);
+	    	 Random r = new Random();
+	    	 int i = r.nextInt(10-1) + 1;
+	    	 int j = r.nextInt(10-1) + 1;
+            Matrix m = new Matrix(i, j);
+            
+            m.escreveMatriz(m.getMatrix());
 
             OutputStream os = clientSocket.getOutputStream();  
             ObjectOutputStream oos = new ObjectOutputStream(os);  
