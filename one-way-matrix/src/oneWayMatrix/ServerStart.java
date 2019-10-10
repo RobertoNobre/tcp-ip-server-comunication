@@ -28,9 +28,10 @@ public class ServerStart {
 
             ObjectInputStream ois = new ObjectInputStream(inputStream);
             Matrix obj = (Matrix) ois.readObject();
-            
+
+            System.out.println("Matrix received in server: \n");
             Matrix m = obj; 
-            m.escreveMatriz(m.getMatrix());
+            m.writeMatrix(m.getMatrix());
             
             isRunning = false;
          }

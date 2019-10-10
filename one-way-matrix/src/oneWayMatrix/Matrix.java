@@ -15,10 +15,10 @@ public class Matrix implements Serializable {
 	
 	public Matrix(int i, int j) {
 		super();
-		matrix = gerarMatriz(i, j);
+		matrix = buildMatrix(i, j);
 	}
 	
-	public int[][] gerarMatriz(int i, int j){
+	public int[][] buildMatrix(int i, int j){
 		int[][] matrix = new int [i][j];
 		
 		for( int a = 0; a < i; a++) {
@@ -31,12 +31,20 @@ public class Matrix implements Serializable {
 		return matrix;
 	}
 	
-	public void escreveMatriz(int m[][]) {
-        for(int i = 0; i < 5; i++) {
-        	for(int j = 0; j < 5; j++) {
-        		System.out.print(m[i][j] + "  ");
+	public void writeMatrix(int m[][]) {
+		int c = m[0].length, l = m.length, j = 0;
+
+        for(int i = 0; i < l; i++) {
+        	for(j = 0; j < c; j++) {
+        		if(j == 0) {
+        			System.out.print("|");
+        		}
+        		System.out.print("  " + m[i][j] + "  ");
+        		if(j == (c-1)) {
+        			System.out.print("|");
+        		}
         	}
-    		System.out.println("  ");
+    		System.out.println("\n");
         }
 	}
 

@@ -24,9 +24,10 @@ public class ClientStart {
 	    	 Random r = new Random();
 	    	 int i = r.nextInt(10-1) + 1;
 	    	 int j = r.nextInt(10-1) + 1;
-            Matrix m = new Matrix(i, j);
-            
-            m.escreveMatriz(m.getMatrix());
+            Matrix m = new Matrix(j, i);
+
+            System.out.println("Matrix sent by client: \n");
+            m.writeMatrix(m.getMatrix());
 
             OutputStream os = clientSocket.getOutputStream();  
             ObjectOutputStream oos = new ObjectOutputStream(os);  
