@@ -1,4 +1,4 @@
-package networkEcho_II;
+package twoWayBytes;
 
 public class Info
    {

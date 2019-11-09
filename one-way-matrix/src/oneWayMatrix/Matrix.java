@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Matrix implements Serializable {
 
-	private static final long serialVersionUID = -4414114422396163664L;
+	private static final long serialVersionUID = -4307447869025181951L;
 	
 	private int[][] matrix;
 

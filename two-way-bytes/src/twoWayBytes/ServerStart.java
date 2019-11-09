@@ -1,4 +1,4 @@
-package networkEcho_II;
+package twoWayBytes;
 
 import java.io.IOException;
 import java.io.InputStream;

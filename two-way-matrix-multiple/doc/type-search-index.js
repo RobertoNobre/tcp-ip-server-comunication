@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"twoWayMatrixMultiple","l":"ClientStart"},{"p":"twoWayMatrixMultiple","l":"Info"},{"p":"twoWayMatrixMultiple","l":"Matrix"},{"p":"twoWayMatrixMultiple","l":"ServerStart"}]

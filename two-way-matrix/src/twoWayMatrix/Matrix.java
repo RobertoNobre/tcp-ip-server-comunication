@@ -48,6 +48,19 @@ public class Matrix implements Serializable {
         }
 	}
 
+   public int[][] transposeMatrix(int[][] m) {
+	   int c = m[0].length, r = m.length, i, j;
+	   int[][] matrixTransposed = new int[c][r];
+	   
+	   for(i = 0; i < c; i++) {
+     	   for(j = 0; j < r; j++){
+     		  matrixTransposed[i][j] = m[j][i];
+           }
+	   }
+
+	   return matrixTransposed;
+   }
+
 	public int[][] getMatrix() {
 		return matrix;
 	}

@@ -27,10 +27,10 @@ public class ServerStart {
             InputStream inputStream = newClientSocket.getInputStream();
 
             ObjectInputStream ois = new ObjectInputStream(inputStream);
-            Matrix obj = (Matrix) ois.readObject();
+            Matrix m = (Matrix) ois.readObject();
 
             System.out.println("Matrix received in server: \n");
-            Matrix m = obj; 
+
             m.writeMatrix(m.getMatrix());
             
             isRunning = false;
