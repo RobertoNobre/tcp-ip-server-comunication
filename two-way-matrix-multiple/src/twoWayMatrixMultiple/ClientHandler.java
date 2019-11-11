@@ -36,7 +36,6 @@ class ClientHandler extends Thread {
          while (isRunning) {
             Matrix MatrixReceived = (Matrix) ois.readObject();
 
-            
            Matrix MatrixTransposed = new Matrix(MatrixReceived.transposeMatrix(MatrixReceived.getMatrix()));
 
 	       System.out.println("Read .....: \n");
@@ -60,7 +59,7 @@ class ClientHandler extends Thread {
      father.threadClosed(this.threadId);
      } catch (IOException exceptionLaunched) {
          // TODO Auto-generated catch block
-         exceptionLaunched.printStackTrace();
+         father.threadClosed(this.threadId);
      } catch (ClassNotFoundException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
