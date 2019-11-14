@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\arthu\Desktop\tcp-ip-server-comunication\two-way-matrix-multiple"/>
+		<item value="C:\Users\arthu\Desktop\tcp-ip-server-comunication"/>
 		<item value="C:\Users\Roberto Nobre\Documents\desenvolvimento\eclipse-workspace\tcp-ip-server-comunication\one-way-matrix"/>
 	</list>
 </section>
